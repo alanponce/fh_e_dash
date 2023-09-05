@@ -11,7 +11,7 @@ from shinywidgets import output_widget, render_widget
 #import the data
 def load_data():
     #read the data
-    path_to_csv = "data/data_20230606.csv"
+    path_to_csv = "data/attribution_detected.csv"
     df = pd.read_csv(path_to_csv, parse_dates=['EventDateTime'], dtype={'CurrentPlatform': str,
                                                                         'CurrentType': str,
                                                                         'Platform': str,
